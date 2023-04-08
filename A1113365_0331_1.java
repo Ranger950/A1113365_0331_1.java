@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class animal {
+class Animal {
     protected String name;
     protected double height;
     protected int weight, speed;
 
-    public animal(String name, double height, int weight, int speed) {
+    public Animal(String name, double height, int weight, int speed) {
         this.name = name;
         this.height = height;
         this.weight = weight;
@@ -26,7 +26,7 @@ class animal {
     }
 }
 
-class human extends animal {
+class human extends Animal {
     protected String sex;
 
     public human(String name, double height, int weight, int speed, String sex) {
@@ -62,11 +62,11 @@ class snow extends human {
 public class A1113365_0331_1 {
     public static void main(String[] argv) {
         Scanner sc = new Scanner(System.in);
-        animal.showinfo();
+        Animal.showinfo();
 
-        animal[] An = new animal[2];
-        An[0] = new animal("雪寶", 1.1, 52, 100);
-        An[1] = new animal("驢子", 1.5, 99, 200);
+        Animal[] An = new Animal[2];
+        An[0] = new Animal("雪寶", 1.1, 52, 100);
+        An[1] = new Animal("驢子", 1.5, 99, 200);
 
         human[] Hu = new human[3];
         Hu[0] = new human("阿克", 1.9, 80, 150, "男");
